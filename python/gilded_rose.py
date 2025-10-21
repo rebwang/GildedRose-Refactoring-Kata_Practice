@@ -15,6 +15,7 @@ class GildedRose(object):
     def __init__(self, items):
         self.items = items
 
+    # Below function added. Refactored from update_quality
     def update_normal_item(self, item):
         if item.quality > 0:
             if item.name != "Sulfuras, Hand of Ragnaros":

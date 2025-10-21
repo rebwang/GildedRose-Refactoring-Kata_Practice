@@ -9,8 +9,10 @@ class GildedRoseTest(unittest.TestCase):
         items = [Item("foo", 0, 0)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
+        # Corrected the test to match expected behavior
         self.assertEqual("foo", items[0].name)
     
+    # New test added for update_normal_item
     def test_normal_item(self):
         items = [Item("Normal", 10, 20)]
         gilded_rose = GildedRose(items)
